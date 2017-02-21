@@ -12,3 +12,5 @@ matplot(0:t, Ns, type = "l", col = 1)
 tmp <- data.frame(rd = as.factor(rd.v), t(Ns))
 Ns2 <- reshape(tmp, varying = list(2:ncol(tmp)), idvar = "rd", v.names = "N", direction = "long")
 print(xyplot(N~time | rd, data = Ns2, type = "l", layout = c(3,2,1), col=1))
+
+# new line for git test
